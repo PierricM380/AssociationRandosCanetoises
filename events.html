@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="icon" type="image/jpg" href="assets/images/web-site/logo.jpg" sizes="16x16">
+    <title>évènements - Association Randos Canétoises</title>
+    <meta property="og:title" content="évènements - Association Randos Canétoises">
+    <meta name="author" content="Association Randos Canétoises">
+    <meta name="description" content="Vous trouverez sur cette page la liste des évènements passés et à venir.">
+    <meta property="og:type" content="website">
+    <script src="https://kit.fontawesome.com/5528e9fcbf.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- NAVIGATION-BAR -->
+    <nav class="row navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container-fluid col-12">
+            <img class="logo-asso" src="assets/images/web-site/logo.jpg" alt="logo Randos Canétoise">
+            <!-- Navbar button at lg breakpoint -->
+            <button class="navbar-toggler mx-2" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Collapse area at lg breakpoint -->
+            <div class="collapse navbar-collapse mx-2" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-1 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Programmes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="events.html">évènements</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Albums</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="guide.html">Charte</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Liens utiles</a>
+                    </li>
+                </ul>
+                <form class="adhérent d-flex">
+                    <input class="form-control me-2" type="password" placeholder="Votre code adhérent"
+                        aria-label="Search">
+                    <button class="enter btn" type="submit">Entrez</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- HEADER -->
+    <header class="row">
+        <section class="col-12">
+            <h1><strong>évènements</strong></h1>
+        </section>
+    </header>
+    <!-- MAIN -->
+    <main class="container-fluid">
+        <div class="events row row-cols-1 row-cols-lg-2 mx-2 g-2">
+            <!-- Event 1 -->
+            <div class="col-lg-6">
+                <!-- Card 1 -->
+                <article class="card h-100">
+                    <h2 class="card-header"><em>Forum des associations - Canet en Roussillon</em></h2>
+                    <div class="row card-body">
+                        <div class="row">
+                            <!-- Image 1 -->
+                            <div class="col-4">
+                                <img class="forum img-fluid" src="assets/images/web-site/forum1.png"
+                                    alt="logo du forum de Canet">
+                            </div>
+                            <!-- Content card 1 -->
+                            <div class="col-8">
+                                <p class="card-text">
+                                    Le 4 Septembre 2021 se déroulera le forum des associations de
+                                    <a href="https://www.canetenroussillon.fr" target="_blank">Canet en Roussillon</a>
+                                    qui, réuni comme chaque année, un grand nombre d'associations et permet des
+                                    échanges conviviaux.
+                                </p>
+                                <p class="card-text">
+                                    Celui-ci se tiendra au théâtre de la Mer place de la Méditerrannée. Envie de faire
+                                    une
+                                    activité sportive, de l'animation ou des loisirs... Ce rassemblement est fait pour
+                                    vous !
+                                </p>
+                                <a class="btn btn-warning" data-bs-toggle="offcanvas" href="#offcanvasExample"
+                                    role="button" aria-controls="offcanvasExample">
+                                    Je participe
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Event 2 -->
+            <div class="col-lg-6">
+                <!-- Card 2 -->
+                <article class="card h-100">
+                    <h2 class="card-header"><em>Randos Canétoises au Forum des Associations</em></h2>
+                    <div class="row card-body">
+                        <div class="row">
+                            <!-- Image 2 -->
+                            <div class="col-4">
+                                <img class="forum img-fluid" src="assets/images/web-site/forum2.jpg" alt="">
+                            </div>
+                            <div class="col-8">
+                                <!-- Content card 2 -->
+                                <p class="card-text">
+                                    Le 5 Septembre 2020 s'est déroulé le forum des associations de Canet en Roussillon.
+                                    Cette année encore a été un grand succès.
+                                </p>
+                                <p class="card-text">
+                                    Bienvenue aux nouveaux adhérents. Merci à tous pour le renouvellement de votre
+                                    adhésion.
+                                    <br>
+                                    Bravo aux bénévoles qui ont animé dans la joie et la bonne humeur un stand très
+                                    prisé avec plus de 200 passages!
+                                </p>
+                                <!-- Participate button opening offcanvas form-->
+                                <a class="participate btn btn-warning disabled" tabindex="-1" role="button"
+                                    aria-disabled="true">Je participe</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Offcanvas for the form of paticipation -->
+            <section class="offcanvas offcanvas-start bg-light" tabindex="-1" id="offcanvasExample"
+                aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                    <h3 class="offcanvas-title" id="offcanvasExampleLabel">Formulaire d'inscription</h3>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <!-- Form -->
+                    <!-- Attribute in action property is not defined yet -->
+                    <form class="row g-3" action="" method="POST">
+                        <!-- Form gender -->
+                        <div class="col-12">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                                    value="option1" required>
+                                <label class="form-check-label" for="inlineRadio1">Mme</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                    value="option2" required>
+                                <label class="form-check-label" for="inlineRadio2">Mr</label>
+                            </div>
+                        </div>
+                        <!-- Form name -->
+                        <div class="col-lg-6">
+                            <label for="name" class="form-label">Nom</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <!-- Form first name -->
+                        <div class="col-lg-6">
+                            <label for="FirstName" class="form-label">Prénom</label>
+                            <input type="text" class="form-control" id="FirstName" required>
+                        </div>
+                        <!-- Form email -->
+                        <div class="col-12">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="example@example.com"
+                                required>
+                        </div>
+                        <!-- Form type of adherent -->
+                        <div class="col-12">
+                            <label for="adherent" class="form-label">Êtes-vous adhérent ?</label>
+                            <select class="form-select" name="adherent" id="adherent" required>
+                                <option value="" disabled selected hidden>Choisissez dans la liste</option>
+                                <option value="yes">Oui</option>
+                                <option value="no">Non</option>
+                            </select>
+                        </div>
+                        <!-- Form comments -->
+                        <div class="col-12">
+                            <label for="comments" class="form-label">Commentaires</label>
+                            <textarea class="form-control" id="comments"></textarea>
+                        </div>
+                        <!-- Form check terms -->
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="check" required>
+                                <label class="form-check-label" for="check">
+                                    J'accèpte les termes et conditions
+                                </label>
+                            </div>
+                        </div>
+                        <!-- Submit button -->
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-warning">Valider</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+    <!-- FOOTER -->
+    <footer class="row">
+        <div class="col-12">
+            <a href="#">Politique de confidentialité</a>
+            <i class="far fa-copyright"> Copyright 2021 - Association Randos Canétoises</i>
+        </div>
+    </footer>
+
+    <script src="jquery/jquery-3.6.0.min.js"></script>
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
