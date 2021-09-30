@@ -5,14 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Content-Type" content="UTF-8">
+    <meta name="Content-Language" content="fr">
     <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="icon" type="image/jpg" href="assets/images/web-site/logo.jpg" sizes="16x16">
     <title>Accueil - Association Randos Canétoises</title>
-    <meta property="og:title" content="Association Randos Canétoises">
-    <meta name="author" content="Association Randos Canétoises">
+    <meta name="Copyright" content="Association Randos Canétoises">
     <meta name="description" content="Page d'accueil de l'association Randos Canétoises.
         Nous vous proposons de découvrir le département des Pyrénéés-Orientales au travers de marches et randonnées.">
+    <meta name="Author" content="Pierric Marye">
+    <meta name="Robots" content="index, follow">
+    <meta name="Rating" content="general">
+    <meta name="Distribution" content="global">
+    <meta name="Category" content="sports">
+    <meta property="og:title" content="Association Randos Canétoises">
     <meta property="og:description"
         content="Découvrir le département des Pyrénéés-Orientales au travers de marches et randonnées.">
     <meta property="og:type" content="website">
@@ -71,7 +78,7 @@
         <div class="index row row-cols-1 row-cols-lg-2 mx-2 g-2">
             <!-- Presentation card -->
             <div class="col-lg-8">
-                <section class="card g-0 h-100">
+                <section class="card g-0 h-100 shadow">
                     <h2 class="card-header">Qui sommes-nous ?</h2>
                     <div class="card-body">
                         <p class="card-text">
@@ -120,33 +127,42 @@
             </div>
             <!-- join us card -->
             <div class="col-lg-4">
-                <section class="card g-0 h-100">
+                <section class="card g-0 h-100 shadow">
                     <h2 class="card-header">Nous rejoindre</h2>
-                    <img class="card-img-top" src="assets/images/web-site/join-card-pic.jpg"
-                        alt="groupe marchant dans la garrigue">
+                    <video class="card-img" muted autoplay playsinline loop>
+                        <source src="assets/videos/trekers.mp4" type="video/mp4">
+                        <source src="assets/videos/trekers.mov" type="video/mov">
+                        <source src="assets/videos/trekers.WebM" type="type/webm">
+                    </video>
                     <div class="card-body">
                         <p class="card-text">
                             Envie de marcher, de randonner, de partager des moments conviviaux.... rien de
                             plus simple!
                         </p>
-                        <hr>
                         <p class="card-text">
-                            Écrivez nous par mail en cliquant ici:
-                            <a href="mailto:randoscanetoises@gmail.com"
-                                title="cliquer sur l'avion pour nous contacter"><i class="fas fa-paper-plane"></i>
-                            </a>
+                            Cliquez sur le lien ci-dessous et remplissez le formulaire d'adhésion pour vous
+                            inscrire.
                         </p>
                         <hr>
                         <p class="card-text">
-                            Vous recevrez le formulaire d'adhésion, le règlement inérieur, ainsi qu'un accès à d'autres
-                            rubriques et documentations.
+                        <div class="wrapperButton">
+                            <a class="indexButton btn btn-sm" href="form.html" target="_blank"
+                                role="button">Rejoignez-nous</a>
+                        </div>
+                        </p>
+                        <hr>
+                        <p class="card-text">
+                            Nous vous répondrons par e-mail en vous envoyant le règlement intérieur, le guide du
+                            randonneur, un exemplaire du formulaire, à nous remettre signer, ainsi que le programme de
+                            l'année. Un réglement, par chèque uniquement, de 20€ vous sera demandé lors de votre
+                            première sortie.
                         </p>
                     </div>
                 </section>
             </div>
             <!-- activities card-->
             <div class="col-12">
-                <section class="card g-0 h-100">
+                <section class="card g-0 h-100 shadow">
                     <h2 class="card-header">Activités proposées</h2>
                     <div class="card-body">
                         <p class="card-text">
@@ -155,7 +171,8 @@
                             descriptif
                             des caractéristiques en corrélation avec le système de cotation mis en place avec la <a
                                 href="https://www.ffrandonnee.fr/randonner/securite/cotation-des-randonnees-pedestres"
-                                title="Site web Fédération Francaise de Randonnée" target="_blank">FFRandonnée</a> et son partenaire IBP
+                                title="Site web Fédération Francaise de Randonnée" target="_blank">FFRandonnée</a> et
+                            son partenaire IBP
                             Index. Cela vous permettra de vous positionner sur une randonnée plus facilement.
                         </p>
                         <p class="card-text">
@@ -165,8 +182,10 @@
                             et/ou la randonnée pédestre et ayant moins de 1 an. Ce certificat a une durée de
                             validité de 3 ans.
                         </p>
-                        <a class="btn btn-sm btn-warning" href="assets/datas/ffrando-guide-cotation.pdf" target="_blank"
-                            role="button">Télécharger le guide IBP</a>
+                        <div class="wrapperButton">
+                            <a class="indexButton btn btn-sm" href="assets/datas/ffrando-guide-cotation.pdf"
+                                target="_blank" role="button">Télécharger le guide IBP</a>
+                        </div>
                         <hr>
                         <!-- Accordion types of activities -->
                         <div class="accordion" id="accordionExample">
@@ -245,9 +264,9 @@
                 </a>
                 <script>
                     !function (d, s, id) {
-                        var js, fjs = d.getElementsByTagName(s)[0];
-                        if (!d.getElementById(id)) {
-                            js = d.createElement(s);
+                        var js, fjs = document.getElementsByTagName(s)[0];
+                        if (!document.getElementById(id)) {
+                            js = document.createElement(s);
                             js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js';
                             fjs.parentNode.insertBefore(js, fjs);
                         }
