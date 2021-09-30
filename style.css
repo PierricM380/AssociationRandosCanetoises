@@ -180,6 +180,11 @@ main .index section .card-text a:hover {
     color: rgb(0, 0, 255);
 }
 
+.weatherwidget-io {
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgb(10, 25, 49);
+}
+
 /* FOOTER */
 footer {
     position: relative;
