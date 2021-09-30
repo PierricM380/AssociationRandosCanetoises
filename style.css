@@ -1,4 +1,6 @@
-* {
+*,
+::before,
+::after {
     box-sizing: border-box;
 }
 
@@ -16,6 +18,7 @@ nav {
     background: rgb(24, 90, 219);
     box-shadow: 0 0 10px rgb(49, 49, 49);
 }
+
 /* Navbar logo */
 .logo-asso {
     width: 50px;
@@ -23,10 +26,11 @@ nav {
     border-radius: 100%;
     margin: 10px;
 }
+
 /* Navbar Validation button */
 .enter {
     border: 1px solid rgb(255, 201, 71);
-    color: rgb(255, 201, 71);    
+    color: rgb(255, 201, 71);
 }
 
 /* HEADER */
@@ -59,11 +63,14 @@ main {
     top: 98px;
 }
 
-main section, main article {
+main section,
+main article {
     background-color: rgb(239, 239, 239);
 }
 
-.guide, .index, .events {
+.guide,
+.index,
+.events {
     display: flex;
     justify-content: center;
 }
@@ -76,41 +83,58 @@ h2 {
     font-size: 1.2rem;
 }
 
-h2, h3 {
+h2,
+h3 {
     text-align: center;
     font-weight: bold;
     font-style: italic;
-    font-family: Georgia, 'Times New Roman', Times, serif; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .card-text {
     text-align: justify;
 }
 
+main .index section .card-text a {
+    color: rgb(24, 90, 219);
+    text-decoration: none;
+}
+
+main .index section .card-text a:hover {
+    text-decoration: underline;
+}
+
 /* images */
+/* INDEX PAGE */
 .hikers {
-    float: right;
-    width: 200px;
-    height: auto;
-    margin: 15px;
+    display: block;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
     border-radius: 5px;
-    box-shadow: -2px 2px 5px rgb(10, 25, 49);
+    box-shadow: 0px 0px 5px rgb(10, 25, 49);
 }
 
 .boat {
-    float: left;
-    width: 200px;
-    height: auto;
-    margin: 15px;
+    display: block;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
     border-radius: 5px;
-    box-shadow: 2px 2px 5px rgb(10, 25, 49);
+    box-shadow: 0 0 5px rgb(10, 25, 49);
 }
 
+/* EVENTS PAGE */
 .forum {
     border-radius: 5px;
     box-shadow: 2px 2px 5px rgb(10, 25, 49);
 }
 
+/* GUIDE PAGE */
 .compass_wrap img {
     float: left;
     width: 125px;
@@ -120,6 +144,22 @@ h2, h3 {
 }
 
 /* activities card */
+.wrapperButton {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.indexButton {
+    background-color: rgb(255, 201, 71);
+    font-weight: bold;
+}
+
+.indexButton:hover {
+    cursor: pointer;
+    box-shadow: 0 0 5px rgb(10, 25, 49);
+}
+
 .hourly {
     font-weight: bold;
 }
@@ -149,14 +189,15 @@ footer {
     font-size: 0.8rem;
 }
 
-footer > div {
+footer>div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-footer > div > a, footer > div > i {
+footer>div>a,
+footer>div>i {
     color: rgb(239, 239, 239);
 }
 
@@ -164,6 +205,7 @@ footer > div > a, footer > div > i {
 /* PROPERTIES FOR LAPTOPS AND UP */
 
 @media screen and (min-width: 992px) {
+
     /* Navbar logo */
     .logo-asso {
         width: 75px;
@@ -175,6 +217,7 @@ footer > div > a, footer > div > i {
         top: 111px;
         height: 500px;
     }
+
     h1 {
         font-size: 3rem;
         padding-top: 0;
@@ -185,26 +228,39 @@ footer > div > a, footer > div > i {
         position: relative;
         top: 130px;
     }
+
     h2 {
         font-size: 1.4rem;
     }
+
+    /* GUIDE PAGE */
     .compass_wrap {
         position: relative;
         overflow: hidden;
     }
-    
+
     .compass_wrap p {
         position: relative;
         z-index: 2;
     }
 
     /* images */
+    /* INDEX PAGE*/
     .hikers {
-        width: 300px;
+        float: right;
+        width: 400px;
+        height: auto;
+        margin: 15px;
     }
+
     .boat {
-        width: 300px;
+        float: left;
+        width: 400px;
+        height: auto;
+        margin: 15px;
     }
+
+    /* GUIDE PAGE */
     .compass_wrap img {
         position: absolute;
         right: 5px;
@@ -220,7 +276,8 @@ footer > div > a, footer > div > i {
         top: 150px;
         height: 115px;
     }
-    footer > div {
+
+    footer>div {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
