@@ -95,12 +95,14 @@ h3 {
     text-align: justify;
 }
 
-main .index section .card-text a {
+main .index section .card-text a,
+main .guide article .card-text a {
     color: rgb(24, 90, 219);
     text-decoration: none;
 }
 
-main .index section .card-text a:hover {
+main .index section .card-text a:hover,
+main .guide article .card-text a:hover {
     text-decoration: underline;
 }
 
@@ -142,7 +144,6 @@ main .index section .card-text a:hover {
     width: 125px;
     height: auto;
     margin-right: 15px;
-    margin-bottom: 15px;
 }
 
 /* activities card */
@@ -158,6 +159,18 @@ main .index section .card-text a:hover {
 }
 
 .indexButton:hover {
+    cursor: pointer;
+    box-shadow: 0 0 5px rgb(10, 25, 49);
+}
+
+.guideButton {
+    color: rgb(255, 201, 71);
+    background-color: rgb(24, 90, 219);
+
+}
+
+.guideButton:hover {
+    color: rgb(255, 201, 71);
     cursor: pointer;
     box-shadow: 0 0 5px rgb(10, 25, 49);
 }
@@ -270,11 +283,14 @@ footer>div>i {
     /* GUIDE PAGE */
     .compass_wrap img {
         position: absolute;
-        right: 5px;
         top: 0;
+        right: 3.1px;
         width: 100%;
         height: auto;
-        opacity: 0.2;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        opacity: 0.1;
     }
 
     /* FOOTER */
