@@ -96,19 +96,21 @@ h3 {
 }
 
 main .index section .card-text a,
-main .guide article .card-text a {
+main .guide article .card-text a,
+main .events article .card-text a {
     color: rgb(24, 90, 219);
     text-decoration: none;
 }
 
 main .index section .card-text a:hover,
-main .guide article .card-text a:hover {
+main .guide article .card-text a:hover,
+main .events article .card-text a:hover {
     text-decoration: underline;
 }
 
-/* images */
-/* INDEX PAGE */
-.hikers {
+/* IMAGES */
+/* index page */
+.hikers1, .boat, .hikers2 {
     display: block;
     width: 300px;
     height: auto;
@@ -120,25 +122,13 @@ main .guide article .card-text a:hover {
     box-shadow: 0px 0px 5px rgb(10, 25, 49);
 }
 
-.boat {
-    display: block;
-    width: 300px;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgb(10, 25, 49);
-}
-
-/* EVENTS PAGE */
-.forum {
+/* events page */
+main .events img {
     border-radius: 5px;
     box-shadow: 2px 2px 5px rgb(10, 25, 49);
 }
 
-/* GUIDE PAGE */
+/* guide page */
 .compass_wrap img {
     float: left;
     width: 125px;
@@ -170,9 +160,10 @@ main .guide article .card-text a:hover {
 }
 
 .guideButton:hover {
-    color: rgb(255, 201, 71);
     cursor: pointer;
-    box-shadow: 0 0 5px rgb(10, 25, 49);
+    color: rgb(255, 201, 71);
+    font-weight: bold;
+    box-shadow: 0 0 10px rgb(10, 25, 49);
 }
 
 .hourly {
@@ -265,12 +256,16 @@ footer>div>i {
     }
 
     /* images */
-    /* INDEX PAGE*/
-    .hikers {
+    /* index page */
+    .hikers1, .hikers2 {
         float: right;
         width: 400px;
         height: auto;
         margin: 15px;
+    }
+
+    .hikers2 {
+        display: none;
     }
 
     .boat {
@@ -280,7 +275,7 @@ footer>div>i {
         margin: 15px;
     }
 
-    /* GUIDE PAGE */
+    /* guide page */
     .compass_wrap img {
         position: absolute;
         top: 0;
@@ -297,7 +292,6 @@ footer>div>i {
     footer {
         position: relative;
         top: 150px;
-        height: 115px;
     }
 
     footer>div {
