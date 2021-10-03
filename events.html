@@ -67,7 +67,7 @@
     <main class="container-fluid">
         <div class="events row row-cols-1 row-cols-lg-2 mx-2 g-2">
             <!-- Event 1 -->
-            <div class="col-lg-6">
+            <div class="col">
                 <!-- Card 1 -->
                 <article class="card h-100">
                     <h2 class="card-header"><em>Forum des associations - Canet en Roussillon</em></h2>
@@ -75,8 +75,8 @@
                         <div class="row">
                             <!-- Image 1 -->
                             <div class="col-4">
-                                <img class="forum img-fluid" src="assets/images/web-site/forum1.png"
-                                    alt="logo du forum de Canet">
+                                <img class="img-fluid" src="assets/images/web-site/event1.png"
+                                    alt="logo du forum des associations de Canet 66 en 2021">
                             </div>
                             <!-- Content card 1 -->
                             <div class="col-8">
@@ -92,17 +92,13 @@
                                     activité sportive, de l'animation ou des loisirs... Ce rassemblement est fait pour
                                     vous !
                                 </p>
-                                <a class="btn btn-warning" data-bs-toggle="offcanvas" href="#offcanvasExample"
-                                    role="button" aria-controls="offcanvasExample">
-                                    Je participe
-                                </a>
                             </div>
                         </div>
                     </div>
                 </article>
             </div>
             <!-- Event 2 -->
-            <div class="col-lg-6">
+            <div class="col">
                 <!-- Card 2 -->
                 <article class="card h-100">
                     <h2 class="card-header"><em>Randos Canétoises au Forum des Associations</em></h2>
@@ -110,7 +106,8 @@
                         <div class="row">
                             <!-- Image 2 -->
                             <div class="col-4">
-                                <img class="forum img-fluid" src="assets/images/web-site/forum2.jpg" alt="">
+                                <img class="img-fluid" src="assets/images/web-site/event2.jpg"
+                                    alt="Grille de photos du stand de l'association Randos Canétoises">
                             </div>
                             <div class="col-8">
                                 <!-- Content card 2 -->
@@ -125,85 +122,11 @@
                                     Bravo aux bénévoles qui ont animé dans la joie et la bonne humeur un stand très
                                     prisé avec plus de 200 passages!
                                 </p>
-                                <!-- Participate button opening offcanvas form-->
-                                <a class="participate btn btn-warning disabled" tabindex="-1" role="button"
-                                    aria-disabled="true">Je participe</a>
                             </div>
                         </div>
                     </div>
                 </article>
             </div>
-            <!-- Offcanvas for the form of paticipation -->
-            <section class="offcanvas offcanvas-start bg-light" tabindex="-1" id="offcanvasExample"
-                aria-labelledby="offcanvasExampleLabel">
-                <div class="offcanvas-header">
-                    <h3 class="offcanvas-title" id="offcanvasExampleLabel">Formulaire d'inscription</h3>
-                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                        aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <!-- Form -->
-                    <!-- Attribute in action property is not defined yet -->
-                    <form class="row g-3" action="" method="POST">
-                        <!-- Form gender -->
-                        <div class="col-12">
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
-                                    value="option1" required>
-                                <label class="form-check-label" for="inlineRadio1">Mme</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
-                                    value="option2" required>
-                                <label class="form-check-label" for="inlineRadio2">Mr</label>
-                            </div>
-                        </div>
-                        <!-- Form name -->
-                        <div class="col-lg-6">
-                            <label for="name" class="form-label">Nom</label>
-                            <input type="text" class="form-control" id="name" required>
-                        </div>
-                        <!-- Form first name -->
-                        <div class="col-lg-6">
-                            <label for="FirstName" class="form-label">Prénom</label>
-                            <input type="text" class="form-control" id="FirstName" required>
-                        </div>
-                        <!-- Form email -->
-                        <div class="col-12">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" placeholder="example@example.com"
-                                required>
-                        </div>
-                        <!-- Form type of adherent -->
-                        <div class="col-12">
-                            <label for="adherent" class="form-label">Êtes-vous adhérent ?</label>
-                            <select class="form-select" name="adherent" id="adherent" required>
-                                <option value="" disabled selected hidden>Choisissez dans la liste</option>
-                                <option value="yes">Oui</option>
-                                <option value="no">Non</option>
-                            </select>
-                        </div>
-                        <!-- Form comments -->
-                        <div class="col-12">
-                            <label for="comments" class="form-label">Commentaires</label>
-                            <textarea class="form-control" id="comments"></textarea>
-                        </div>
-                        <!-- Form check terms -->
-                        <div class="col-12">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="check" required>
-                                <label class="form-check-label" for="check">
-                                    J'accèpte les termes et conditions
-                                </label>
-                            </div>
-                        </div>
-                        <!-- Submit button -->
-                        <div class="col-12">
-                            <button type="submit" class="btn btn-warning">Valider</button>
-                        </div>
-                    </form>
-                </div>
-            </section>
         </div>
     </main>
     <!-- FOOTER -->
