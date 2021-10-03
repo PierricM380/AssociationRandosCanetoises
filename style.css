@@ -70,7 +70,8 @@ main article {
 
 .guide,
 .index,
-.events {
+.events,
+.albums {
     display: flex;
     justify-content: center;
 }
