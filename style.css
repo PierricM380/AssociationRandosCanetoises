@@ -71,7 +71,8 @@ main article {
 .guide,
 .index,
 .events,
-.albums {
+.albums,
+.utilities {
     display: flex;
     justify-content: center;
 }
@@ -111,7 +112,9 @@ main .events article .card-text a:hover {
 
 /* IMAGES */
 /* index page */
-.hikers1, .boat, .hikers2 {
+.hikers1,
+.hikers2,
+.boat {
     display: block;
     width: 300px;
     height: auto;
@@ -144,6 +147,17 @@ main .events img {
     margin: 20px;
 }
 
+.indexMailButton {
+    background-color: rgb(24, 90, 219);
+    color: rgb(255, 255, 255);
+}
+
+.indexMailButton:hover {
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 0 5px rgb(10, 25, 49);
+}
+
 .indexButton {
     background-color: rgb(255, 201, 71);
     font-weight: bold;
@@ -163,7 +177,6 @@ main .events img {
 .guideButton:hover {
     cursor: pointer;
     color: rgb(255, 201, 71);
-    font-weight: bold;
     box-shadow: 0 0 10px rgb(10, 25, 49);
 }
 
@@ -258,9 +271,9 @@ footer>div>i {
 
     /* images */
     /* index page */
-    .hikers1, .hikers2 {
+    .hikers1 {
         float: right;
-        width: 400px;
+        width: 300px;
         height: auto;
         margin: 15px;
     }
