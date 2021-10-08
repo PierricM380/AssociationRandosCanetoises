@@ -19,7 +19,6 @@ nav {
     box-shadow: 0 0 10px rgb(49, 49, 49);
 }
 
-/* Navbar logo */
 .logo-asso {
     width: 50px;
     height: auto;
@@ -27,7 +26,6 @@ nav {
     margin: 10px;
 }
 
-/* Navbar Validation button */
 .enter {
     border: 1px solid rgb(255, 201, 71);
     color: rgb(255, 201, 71);
@@ -41,7 +39,7 @@ header {
     justify-content: center;
     align-items: center;
     height: 200px;
-    background-image: url('assets/images/web-site/header-picture.jpg');
+    background-image: url("assets/images/web-site/header-picture.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     box-shadow: 0 0 10px rgb(10, 25, 49);
@@ -52,7 +50,7 @@ h1 {
     text-align: center;
     font-weight: bold;
     font-style: italic;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, "Times New Roman", Times, serif;
     color: rgb(255, 201, 71);
     padding-top: 10px;
 }
@@ -61,11 +59,6 @@ h1 {
 main {
     position: relative;
     top: 98px;
-}
-
-main section,
-main article {
-    background-color: rgb(239, 239, 239);
 }
 
 .guide,
@@ -90,7 +83,7 @@ h3 {
     text-align: center;
     font-weight: bold;
     font-style: italic;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .card-text {
@@ -110,43 +103,13 @@ main .events article .card-text a:hover {
     text-decoration: underline;
 }
 
-/* IMAGES */
-/* index page */
-.hikers1,
-.hikers2,
-.boat {
-    display: block;
-    width: 300px;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 5px rgb(10, 25, 49);
-}
-
-/* events page */
-main .events img {
-    border-radius: 5px;
-    box-shadow: 2px 2px 5px rgb(10, 25, 49);
-}
-
-/* guide page */
-.compass_wrap img {
-    float: left;
-    width: 125px;
-    height: auto;
-    margin-right: 15px;
-}
-
-/* activities card */
 .wrapperButton {
     display: flex;
     justify-content: center;
     margin: 20px;
 }
 
+/* index page */
 .indexMailButton {
     background-color: rgb(24, 90, 219);
     color: rgb(255, 255, 255);
@@ -166,18 +129,6 @@ main .events img {
 .indexButton:hover {
     cursor: pointer;
     box-shadow: 0 0 5px rgb(10, 25, 49);
-}
-
-.guideButton {
-    color: rgb(255, 201, 71);
-    background-color: rgb(24, 90, 219);
-
-}
-
-.guideButton:hover {
-    cursor: pointer;
-    color: rgb(255, 201, 71);
-    box-shadow: 0 0 10px rgb(10, 25, 49);
 }
 
 .hourly {
@@ -205,6 +156,64 @@ main .events img {
     box-shadow: 0 0 5px rgb(10, 25, 49);
 }
 
+.hikers1,
+.hikers2,
+.boat {
+    display: block;
+    width: 300px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgb(10, 25, 49);
+}
+
+/* events page */
+.events img {
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgb(10, 25, 49);
+}
+
+/* guide page */
+.compass_wrap img {
+    float: left;
+    width: 125px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.guideButton {
+    color: rgb(255, 201, 71);
+    background-color: rgb(24, 90, 219);
+}
+
+.guideButton:hover {
+    cursor: pointer;
+    color: rgb(255, 201, 71);
+    box-shadow: 0 0 10px rgb(10, 25, 49);
+}
+
+/* utilities page */
+.utilities article h2 {
+    text-decoration: underline;
+}
+
+.utilityButton {
+    background-color: rgb(255, 201, 71);
+    color: rgb(10, 25, 49);
+}
+
+.utilityButton:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 5px rgb(10, 25, 49)
+}
+
+.utilities img {
+    height: 225px;
+}
+
 /* FOOTER */
 footer {
     position: relative;
@@ -226,12 +235,11 @@ footer>div>i {
     color: rgb(239, 239, 239);
 }
 
-
 /* PROPERTIES FOR LAPTOPS AND UP */
 
 @media screen and (min-width: 992px) {
 
-    /* Navbar logo */
+    /* NAVIGATION BAR */
     .logo-asso {
         width: 75px;
     }
@@ -258,18 +266,6 @@ footer>div>i {
         font-size: 1.4rem;
     }
 
-    /* GUIDE PAGE */
-    .compass_wrap {
-        position: relative;
-        overflow: hidden;
-    }
-
-    .compass_wrap p {
-        position: relative;
-        z-index: 2;
-    }
-
-    /* images */
     /* index page */
     .hikers1 {
         float: right;
@@ -290,6 +286,11 @@ footer>div>i {
     }
 
     /* guide page */
+    .compass_wrap {
+        position: relative;
+        overflow: hidden;
+    }
+
     .compass_wrap img {
         position: absolute;
         top: 0;
@@ -300,6 +301,11 @@ footer>div>i {
         margin-right: auto;
         margin-top: 20px;
         opacity: 0.1;
+    }
+
+    .compass_wrap p {
+        position: relative;
+        z-index: 2;
     }
 
     /* FOOTER */
