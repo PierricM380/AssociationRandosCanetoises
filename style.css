@@ -203,6 +203,7 @@ main .events article .card-text a:hover {
 .utilityButton {
     background-color: rgb(255, 201, 71);
     color: rgb(10, 25, 49);
+    margin-inline: 20px;
 }
 
 .utilityButton:hover {
@@ -213,6 +214,12 @@ main .events article .card-text a:hover {
 .utilities img {
     height: 225px;
 }
+
+.utilities a > img {
+    width: 20px;
+    height: 20px;
+}
+
 
 /* FOOTER */
 footer {
