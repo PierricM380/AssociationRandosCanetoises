@@ -65,7 +65,8 @@ main {
 .index,
 .events,
 .albums,
-.utilities {
+.utilities,
+.programs {
     display: flex;
     justify-content: center;
 }
@@ -170,6 +171,12 @@ main .events article .card-text a:hover {
 .hikers1 {
     border-color: rgb(255, 68, 0);
     box-shadow: 0px 0px 10px rgb(10, 25, 49);
+}
+
+/* programs page */
+
+.programs p {
+    text-align: center;
 }
 
 /* events page */
