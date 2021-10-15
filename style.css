@@ -179,6 +179,25 @@ main .events article .card-text a:hover {
     text-align: center;
 }
 
+.programs table {
+    text-align: center;
+    border: 1px solid rgb(255, 201, 71);
+}
+
+.programs thead {
+    background-color: rgb(255, 201, 71);
+}
+
+.programs article img {
+    width: 40px;
+    height: auto;
+}
+
+.programs tfoot td:nth-child(1) {
+    color: rgb(255, 68, 0);
+    font-weight: bold;
+}
+
 /* events page */
 .events img {
     border-radius: 5px;
