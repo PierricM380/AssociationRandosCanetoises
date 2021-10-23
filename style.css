@@ -173,28 +173,12 @@ main .events article .card-text a:hover {
 }
 
 /* programs page */
-
-.programs p {
+main .programs p {
     text-align: center;
 }
 
-.programs table {
-    text-align: center;
-    border: 1px solid rgb(255, 201, 71);
-}
-
-.programs thead {
-    background-color: rgb(255, 201, 71);
-}
-
-.programs article img {
-    width: 40px;
-    height: auto;
-}
-
-.programs tfoot td:nth-child(1) {
-    color: rgb(255, 68, 0);
-    font-weight: bold;
+.programs article img:hover {
+    box-shadow: 0 0 5px rgb(10, 25, 49);
 }
 
 /* events page */
