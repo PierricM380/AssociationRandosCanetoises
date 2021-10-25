@@ -1,12 +1,20 @@
 // HIDDEN NAVBAR ON SCROLL
-
-// INDEX PAGE SLIDE SHOW
+let nav = document.querySelector("nav");
 const images = document.querySelectorAll(".slide");
 let imgActive = 0;
 let interval = setInterval(next, 7000);
 images[imgActive].classList.add("show");
 
-// hidde first picture 
+// Scrool Navbar
+window.addEventListener("scroll", () => {
+  if (window.scrollY < 150) {
+    nav.style.top = 0;
+  } else {
+    nav.style.top = "-125px";
+  }
+});
+
+// hidde first picture
 for (let i = 1; i < images.length; i += 1) {
   images[i].classList.add("hidden");
 }
@@ -45,14 +53,4 @@ function prev() {
 
 document.querySelector("#prev").addEventListener("click", function () {
   prev();
-});
-
-// Arrow keys press
-window.addEventListener("keydown", function (e) {
-  if (e.key == "ArrowRight") {
-    next();
-  }
-  if (e.key == "ArrowLeft") {
-    prev();
-  }
 });
