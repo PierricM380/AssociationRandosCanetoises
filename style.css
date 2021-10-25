@@ -107,6 +107,44 @@ main .events article .card-text a:hover {
 }
 
 /* index page */
+.info {
+    display: block;
+    margin-bottom:20px;
+    border-radius: 5px;
+    border-color: rgb(255, 68, 0);
+    box-shadow: 0px 0px 5px rgb(10, 25, 49);
+}
+
+.slideShow {
+    display: block;
+    margin: 20px;
+}
+
+.slideShow .slide {
+    opacity: 0;
+    transition: 2s ease-in-out;
+}
+
+.slideShow .show {
+    opacity: 1;
+    transition: 2s ease-in-out;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgb(10, 25, 49);
+}
+
+.slideShow .hidden {
+    display: none;
+}
+
+#prev,
+#next {
+    display: inline-block;
+    cursor: pointer;
+    color: lightgrey;
+    font-size: 30px;
+    margin: 1rem;
+}
+
 .indexMailButton {
     background-color: rgb(24, 90, 219);
     color: rgb(255, 255, 255);
@@ -150,26 +188,7 @@ main .events article .card-text a:hover {
 
 .weatherwidget-io {
     border-radius: 5px;
-    box-shadow: 0 0 5px rgb(10, 25, 49);
-}
-
-.hikers1,
-.hikers2,
-.boat {
-    display: block;
-    width: 300px;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 5px rgb(10, 25, 49);
-}
-
-.hikers1 {
-    border-color: rgb(255, 68, 0);
-    box-shadow: 0px 0px 10px rgb(10, 25, 49);
+    box-shadow: 5px 5px 5px rgb(10, 25, 49);
 }
 
 /* programs page */
@@ -226,7 +245,7 @@ main .programs p {
     height: 225px;
 }
 
-.utilities a > img {
+.utilities a>img {
     width: 20px;
     height: 20px;
 }
@@ -289,20 +308,9 @@ footer>div>i {
     }
 
     /* index page */
-    .hikers1 {
-        float: right;
-        width: 300px;
-        height: auto;
-        margin: 15px;
-    }
-
-    .hikers2 {
-        display: none;
-    }
-
-    .boat {
+    .info {
         float: left;
-        width: 400px;
+        width: 275px;
         height: auto;
         margin: 15px;
     }
