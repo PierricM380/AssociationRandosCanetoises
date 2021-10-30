@@ -41,7 +41,7 @@ header {
     justify-content: center;
     align-items: center;
     height: 200px;
-    background-image: url("assets/images/web-site/header-picture.jpg");
+    background-image: url("assets/images/web-site/header-picture.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     box-shadow: 0 0 10px rgb(10, 25, 49);
@@ -118,7 +118,10 @@ main .events article .card-text a:hover {
 }
 
 .slideShow {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     margin: 20px;
 }
 
@@ -144,7 +147,6 @@ main .events article .card-text a:hover {
     cursor: pointer;
     color: lightgrey;
     font-size: 30px;
-    margin: 1rem;
 }
 
 .indexMailButton {
