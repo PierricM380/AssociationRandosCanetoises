@@ -134,7 +134,7 @@ main .events article .card-text a:hover {
     opacity: 1;
     transition: 2s ease-in-out;
     border-radius: 5px;
-    box-shadow: 0 0 5px rgb(10, 25, 49);
+    box-shadow: 0 0 10px rgb(10, 25, 49);
 }
 
 .slideShow .hidden {
