@@ -1,18 +1,7 @@
-// HIDDEN NAVBAR ON SCROLL
-let nav = document.querySelector("nav");
 const images = document.querySelectorAll(".slide");
 let imgActive = 0;
 let interval = setInterval(next, 7000);
 images[imgActive].classList.add("show");
-
-// Scrool Navbar
-window.addEventListener("scroll", () => {
-  if (window.scrollY < 150) {
-    nav.style.top = 0;
-  } else {
-    nav.style.top = "-125px";
-  }
-});
 
 // hidde first picture
 for (let i = 1; i < images.length; i += 1) {
