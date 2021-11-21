@@ -1,3 +1,4 @@
+/** SLIDESHOW IMAGES INDEX PAGE */
 const images = document.querySelectorAll(".slide");
 let imgActive = 0;
 let interval = setInterval(next, 7000);
